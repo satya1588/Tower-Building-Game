@@ -396,7 +396,7 @@
                 <div id="score" class="over-score font-wenxue"></div>
                 <div id="over-zero" class="">
                   <div class="tip">
-                    <p>Try Again!</p><img src="./assets/main-modal-again-b.png" class="over-button-b js-reload"><img
+                    <p>Try Again!</p><img src="./assets/main-modal-again-b.png" class="over-button-b js-reload" ><img
                      class="over-button-b js-invite">
                   </div>
                 </div>
@@ -479,7 +479,7 @@
       if (f >= 3) overShowOver()
     }
   }
-  
+
 
   // game init with option
   function gameReady() {
@@ -529,6 +529,7 @@
   });
 
   $('.js-reload').on('click', function () {
+    
     window.location.href = window.location.href + '?s=' + (+new Date())
   });
 

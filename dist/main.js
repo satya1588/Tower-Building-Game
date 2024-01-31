@@ -243,13 +243,13 @@
             }}
             , !1),
             document.addEventListener("keypress", t=>{
-                if (t.keyCode === 3) {
+                if (t.keyCode === 37) {
                 u.touchMoveListener(t)
             }}
             , !1)
             ,
             document.addEventListener("keypress", t=>{
-                if (t.keyCode === 13) {
+                if (t.keyCode === 13 || t.keyCode == 32) {
       
                 u.touchMoveListener(t)
 
