@@ -222,15 +222,15 @@
                 u.keyListener(t, "keypress")
             }
             , !1),
-            this.isTouchDevice ? (document.addEventListener("touchstart", t=>{
+            this.isTouchDevice ? (document.addEventListener("keypress", t=>{
                 u.touchStartListener(t)
             }
             , !1),
-            document.addEventListener("touchend", t=>{
+            document.addEventListener("keypress", t=>{
                 u.touchEndListener(t)
             }
             , !1),
-            document.addEventListener("touchmove", t=>{
+            document.addEventListener("keypress", t=>{
                 u.touchMoveListener(t)
             }
             , !1)) : (document.addEventListener("keypress", t=>{
