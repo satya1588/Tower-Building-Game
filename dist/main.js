@@ -237,17 +237,19 @@
                 u.touchStartListener(t)
             }
             , !1),
-            document.addEventListener("mouseup", t=>{
+            document.addEventListener("keypress", t=>{
+                if (t.keyCode === 179) {
                 u.touchEndListener(t)
-            }
+            }}
             , !1),
-            document.addEventListener("mousemove", t=>{
+            document.addEventListener("keypress", t=>{
+                if (t.keyCode === 3) {
                 u.touchMoveListener(t)
-            }
+            }}
             , !1)
             ,
             document.addEventListener("keypress", t=>{
-                if (event.keyCode === 13) {
+                if (t.keyCode === 13) {
       
                 u.touchMoveListener(t)
 
