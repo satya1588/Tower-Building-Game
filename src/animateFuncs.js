@@ -27,6 +27,17 @@ export const endAnimate = (engine) => {
     fontWeight: 'bold'
   })
   drawYellowString(engine, {
+    string: gameScore,
+    size: engine.width * 0.06,
+    x: engine.width * 0.9,
+    y: engine.width * 0.11,
+    textAlign: 'right'
+  });
+
+  // Display the highest score
+  displayHighestScore();
+  
+  drawYellowString(engine, {
     string: successCount,
     size: engine.width * 0.17,
     x: (engine.width * 0.22) + threeFiguresOffset,
