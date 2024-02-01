@@ -1214,7 +1214,9 @@
                 y: .12 * t.width,
                 textAlign: "left",
                 fontName: "Arial",
-                fontWeight: "bold"
+                fontWeight: "bold",
+                
+                
             }),
             A(t, {
                 string: e,
